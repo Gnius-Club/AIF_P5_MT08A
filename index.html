@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM08A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 8A 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes integren sus conocimientos previos para diseñar un "robot atleta" que combine un mecanismo de pateo/lanzamiento (con servo) y la visión por IA.</li>
+                                        <li>Que comprendan cómo usar los datos de posición (X,Y) de la A.I. Lens para guiar la puntería, y diseñen la secuencia lógica completa (buscar, alinear, actuar), obteniendo el plan de Xolo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Integrar conocimientos y presentar el desafío de puntería.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Aprender la estrategia de puntería guiada por IA y comandos de detección/posición/acción.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Formación de equipos, diseño de la "idea" de robot atleta y obtención del "plan" individual.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Compartición de diseños de mecanismos y estrategias de puntería.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un conjunto de hasta 4 planes (GCS) individuales por equipo, cada uno para una misión de robot atleta que busca, alinea y patea/lanza un objetivo usando la visión IA y un servo, listos para ser implementados y probados en la Sesión 8B.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>1 Nezha Pro Sports Kit (con A.I. Lens y servomotores) por equipo de 4 estudiantes.</li>
+                                        <li>Un servo y una pelota pequeña para demostración.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Tener los kits (con A.I. Lens y servos) listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-12) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, diálogos y tiempos.</li>
+                                        <li><strong>Preparación Física:</strong> Ten un servo y una pelota pequeña a mano para la demostración conceptual de puntería.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, futuros campeones de la robótica! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo les está contestando y está listo para la acción. Si alguien no ha recibido respuesta, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Integrar conocimientos previos y presentar el desafío de puntería guiada por IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Contextualización - Integrando Conocimientos ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Anuncia la actividad y sostiene un servo y una pelota pequeña.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, iniciamos la actividad <strong>'I Can Statement + Ejemplificación'</strong>. (Sostiene un servo y una pelota pequeña). Recuerdan los servos para crear mecanismos precisos. Recuerdan la A.I. Lens para 'ver' objetos. Hoy, los unimos. El robot debe 'ver' la pelota y luego usar el servo para 'patearla'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: El Desafío de la Puntería ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Enfoca la atención en la necesidad de alineación para la puntería.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Pero no basta con ver la pelota. Si la pelota está a la izquierda, el robot no puede patear al frente. Debe primero girar para alinearse con la pelota. ¡Ese es el secreto de la puntería y ahí es donde la IA nos ayudará!</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy vamos a ser los entrenadores y estrategas de nuestro robot deportista. Al final de la sesión, podrán decir: <strong>'Yo puedo explicar cómo un robot usa los datos de la IA para apuntar, y mi equipo tiene un plan completo (GCS) para que nuestro robot busque una pelota, se alinee con ella y la patee.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 15 minutos</h2>
+                <p>Guiar a los alumnos para que aprendan la estrategia de puntería guiada por IA y los comandos necesarios.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Exploración con Xolo - La Estrategia del Robot Atleta (Detección y Puntería) ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Anuncia la actividad y guía a los alumnos para que pidan la explicación a Xolo sobre la estrategia de puntería y detección.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Perfecto, ahora vamos al <strong>A.I. GYM</strong> para que Xolo les enseñe la estrategia de puntería de un robot atleta! Pidanle a Xolo la siguiente información, escribiendo en el chat: <strong>'Mi perfil es [escribe tu perfil] y quiero que me enseñes sobre cómo un robot puede detectar un objetivo y usar la posición X para apuntar con precisión.'</strong> Xolo les explicará cómo la A.I. Lens puede buscar el objetivo y cómo la coordenada X es clave para la puntería. Les recordará los modos de la A.I. Lens como Color, Ball, o Object Learning.</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// Estrategia de Puntería con Posición X:
+SI la posición X de la pelota es pequeña (a la izquierda), ENTONCES el robot debe girar a la izquierda.
+SI la posición X es grande (a la derecha), ENTONCES el robot debe girar a la derecha.
+SI la posición X está justo en el medio... ¡el robot está alineado y listo para patear!</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Acción (Activar el Mecanismo) y Diseño Mecánico Conceptual ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador guía la discusión sobre la activación del mecanismo y el diseño conceptual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Atención! Xolo les está explicando que, una vez que el robot está perfectamente alineado, es cuando activamos el servo para que ejecute el mecanismo de pateo o lanzamiento. Para el mecanismo, pueden usar un servo para mover una palanca rápidamente. Piensen en una catapulta simple o en una 'pierna' que se balancea. Lo importante es que el movimiento sea rápido y en la dirección correcta. ¡Esto es clave para la puntería!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 10 minutos</h2>
+                <p>Proceso de diseño de una "idea" de robot atleta y obtención del "plan" individual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Organización de Equipos y Diseño Conceptual (Equipo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Anuncia la actividad y organiza a los alumnos en equipos de 4. Lanza el desafío de diseño conceptual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegamos al <strong>Brain Spark</strong>! Reúnanse en sus equipos de 4 personas. Su primera misión es diseñar a su robot atleta. Primero, decidan qué mecanismo de pateo/lanzamiento construirán. Segundo, definan la estrategia completa: ¿cómo busca la pelota?, ¿cómo se alinea?, ¿y cómo patea? Discutan y pónganse de acuerdo en un concepto general.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación y Plan Individual (Cada Integrante) ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guía a cada estudiante para que diseñe su misión individual y pida el plan a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora que tienen su concepto de robot atleta, cada uno de ustedes, de forma INDIVIDUAL, va a pensar en una misión completa y se la va a pedir a Xolo. Por ejemplo: <strong>'Nuestro robot es un Delantero Estrella. Su misión es girar hasta que vea una pelota roja. Cuando la vea, usará la posición X para centrarla perfectamente. Una vez que esté alineado, usará un servo para lanzar una palanca hacia adelante y patear la pelota.'</strong> Describan su idea (su vibe) y estrategia a Xolo para que les ayude a diseñar la lógica y genere su plan (el GCS). Cada integrante tendrá su propio plan, ¡así cada equipo tendrá 4 planes diferentes para el mismo robot atleta!</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">AL INICIO:
+    Initialize AI-Lens
+    Switch function as Color // O el modo que elijan
+    nezha_servo_S1_angulo(0) // Pone la palanca en posición de reposo
+    mostrar texto "Delantero!"
+
+POR SIEMPRE:
+    fijar variable "color_visto" a leer_lente_IA_color()
+
+    SI (variable "color_visto" == "ROJO"):
+        // ¡Pelota detectada! Ahora a apuntar.
+        // (Suponiendo que la lente en modo color también da X,Y. 
+        // Si no, habría que usar un modo que sí lo haga, como Ball o Learn)
+        fijar variable "posicion_x_pelota" a leer_info_color_ROJO_X() 
+
+        SI (variable "posicion_x_pelota" < 140):
+            // Pelota a la izquierda, girar para alinear.
+            nezha_motor_M1_velocidad(-25)
+            nezha_motor_M2_velocidad(25)
+        SINO SI (variable "posicion_x_pelota" > 180):
+            // Pelota a la derecha, girar para alinear.
+            nezha_motor_M1_velocidad(25)
+            nezha_motor_M2_velocidad(-25)
+        SINO:
+            // ¡ALINEADO! Patear.
+            nezha_motor_M1_velocidad(0) // Detenerse para precisión
+            nezha_motor_M2_velocidad(0)
+            ESPERAR(200)
+            nezha_servo_S1_angulo(90) // Movimiento de patada
+            ESPERAR(300)
+            nezha_servo_S1_angulo(0) // Regresar a reposo
+            ESPERAR(1000)
+        FIN SI
+    SINO:
+        // No veo la pelota, seguir buscándola (girar).
+        nezha_motor_M1_velocidad(30)
+        nezha_motor_M2_velocidad(-30)
+    FIN SI</pre>
+                                 <p class="dialogue assistant">¡Guarden muy bien sus planes individuales! En la próxima clase, los usarán para construir y darle vida a su robot atleta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir los diseños de mecanismos y estrategias de puntería.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) Anuncia la actividad final e instruye una reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Excelente trabajo, equipos! Llegamos al <strong>Gnius STORM</strong>. Antes de compartir, piensen un momento: ¿Cuál creen que será el mayor desafío al hacer que su robot apunte y patee la pelota con precisión?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Grupo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Indica a los equipos que compartan sus diseños y estrategias.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Ahora, a compartir! Un portavoz de cada equipo nos describirá el diseño de su mecanismo pateador y explicará su estrategia de puntería. ¿Cómo sabrá su robot que está apuntando al lugar correcto? ¡Escuchemos esas ideas de atletas robóticos!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 12) Cierra la sesión y conecta con la siguiente unidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantásticos diseños y estrategias! Han combinado la mecánica, la programación y la IA para crear un verdadero atleta robótico. La puntería es uno de los desafíos más clásicos de la robótica, y ustedes ya tienen el plan para resolverlo. En la próxima sesión, construirán estos mecanismos, programarán la puntería y veremos quién marca el primer gol.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
